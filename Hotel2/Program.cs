@@ -8,6 +8,7 @@ namespace Hotel2
         {
             DateTime startDate1 = new DateTime(2020, 1, 1);
             DateTime startDate2 = new DateTime(2022, 3, 15);
+            DateTime startDate3 = new DateTime(2023, 1, 1);
 
             Manager manager = new Manager("Lisa Ledarsson", 40, "M001", startDate1, 50000m, "Administration");
             Employee employee = new Employee("Erik Anställdsson", 30, "E001", startDate2, 30000m, "Front Desk", "Receptionist");
@@ -23,7 +24,13 @@ namespace Hotel2
             employee.Work();
 
 
-
+            Consultant consultant = new Consultant("Eva Expert", 35, "C001", startDate3, 0, 1000, "Hotell Experterna AB");
+            Console.WriteLine("\nConsultant:");
+            consultant.PrintInfo();
+            consultant.Introduce();
+            consultant.GiveAdvice();
+            Console.WriteLine($"Hourly Rate: {consultant.HourlyRate}");
+            Console.WriteLine($"Consulting Firm: {consultant.ConsultingFirm}");
         }
     }
 }
