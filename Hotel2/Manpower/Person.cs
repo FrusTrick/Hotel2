@@ -13,6 +13,17 @@ namespace Hotel2.Manpower
         protected string EmployeeId { get; set; }
         protected DateTime StartDate { get; set; }
         protected decimal Salary { get; set; }
+        protected string Department { get; set; }
+
+        protected Person (string toName, int toAge, string toEmployeeID, DateTime toStartDate, decimal toSalary, string toDepartment)
+        {
+            Name = toName;
+            Age = toAge;
+            EmployeeId = toEmployeeID;
+            StartDate = toStartDate;
+            Salary = toSalary;
+            Department = toDepartment;
+        }
 
         public void PrintInfo()
         {
