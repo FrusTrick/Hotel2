@@ -30,5 +30,10 @@ namespace Hotel2.Manpower
         {
             Console.WriteLine($"Hej, jag heter {Name}, jag är {Age} år gammal och jag är chef för {Department} avdelningen.");
         }
+
+        public void PlanBudget()
+        {
+            Console.WriteLine($"{Name} planerar hotellets budget");
+        }
     }
 }

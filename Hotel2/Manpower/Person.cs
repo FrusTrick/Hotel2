@@ -23,6 +23,10 @@ namespace Hotel2.Manpower
             Salary = salary;
         }
 
+        public Person()
+        {
+        }
+
         public virtual void PrintInfo()
         {
 

@@ -15,10 +15,14 @@ namespace Hotel2.Manpower
         {
             JobTitle = jobTitle;
             Department = department;
-        }
-        
 
-        public void Work()
+        }
+        public Employee()
+        {
+
+        }
+
+        public virtual void Work()
         {
             Console.WriteLine($"{Name} arbetar som {JobTitle} på {Department}");
         }

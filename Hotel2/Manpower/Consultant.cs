@@ -10,15 +10,22 @@ namespace Hotel2.Manpower
     {
         public int HourlyRate { get; set; }
         public string ConsultingFirm { get; set; }
-        public Consultant(string name, int age, string employeeID, DateTime startDate, decimal salary, int hourlyRate, string consultingFirm) : base(name, age, employeeID, startDate, salary)
+        public string Expertise {  get; set; }
+        public Consultant(string name, int age, string employeeID, DateTime startDate, decimal salary, int hourlyRate, string consultingFirm, string expertise) : base(name, age, employeeID, startDate, salary)
         {
             HourlyRate = hourlyRate;
             ConsultingFirm = consultingFirm;
+            Expertise = expertise;
         }
 
+        public Consultant()
+        {
+
+        }
         public void GiveAdvice()
         {
             Console.WriteLine($"{Name} Ger råd till hotellet om hur de kan förbättra sina rutiner.");
+            Console.WriteLine($"{Expertise} är konsultens expertområde");
         }
 
         public override void PrintInfo()

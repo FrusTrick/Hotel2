@@ -17,6 +17,7 @@ namespace Hotel2
             manager.PrintInfo();
             manager.Introduce();
             manager.HoldMeeting();
+            manager.PlanBudget();
 
             Console.WriteLine("\nEmployee");
             employee.PrintInfo();
@@ -24,13 +25,17 @@ namespace Hotel2
             employee.Work();
 
 
-            Consultant consultant = new Consultant("Eva Expert", 35, "C001", startDate3, 0, 1000, "Hotell Experterna AB");
+            Consultant consultant = new Consultant("Eva Expert", 35, "C001", startDate3, 0, 1000, "Hotell Experterna AB", "HR");
             Console.WriteLine("\nConsultant:");
             consultant.PrintInfo();
             consultant.Introduce();
             consultant.GiveAdvice();
             Console.WriteLine($"Hourly Rate: {consultant.HourlyRate}");
             Console.WriteLine($"Consulting Firm: {consultant.ConsultingFirm}");
+
+            Housekeeper housekeeper = new Housekeeper("Anna Clean", 32);
+            housekeeper.PrintInfo();
+            housekeeper.Work();
         }
     }
 }
