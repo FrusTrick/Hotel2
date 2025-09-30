@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel2.Manpower
 {
-    internal class Person
+    public class Person
     {
         protected string Name { get; set; }
         protected int Age { get; set; }
