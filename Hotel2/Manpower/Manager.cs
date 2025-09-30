@@ -8,5 +8,15 @@ namespace Hotel2.Manpower
 {
     internal class Manager : Person
     {
+        public string Department { get; set; }
+
+        public Manager()
+        {
+        }
+
+        public void HoldMeeting()
+        {
+            Console.WriteLine($"{Name} håller ett personalmöte på hotellet.");
+        }
     }
 }
