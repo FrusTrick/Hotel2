@@ -25,11 +25,20 @@ namespace Hotel2.Manpower
             Department = toDepartment;
         }
 
-        public void PrintInfo()
+        public Person(string name, int age, string employeeId, DateTime startDate, decimal salary)
+        {
+            Name = name;
+            Age = age;
+            EmployeeId = employeeId;
+            StartDate = startDate;
+            Salary = salary;
+        }
+
+        public virtual void PrintInfo()
         {
 
         }
-        public void Introduce()
+        public virtual void Introduce()
         {
 
         }

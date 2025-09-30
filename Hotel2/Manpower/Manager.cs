@@ -8,15 +8,27 @@ namespace Hotel2.Manpower
 {
     internal class Manager : Person
     {
-        public Manager(string toName, int toAge, string toEmployeeID, DateTime toStartDate, decimal toSalary, string toDepartment) : base(toName, toAge, toEmployeeID, toStartDate, toSalary, toDepartment)
-        {
+        
+        public string Department { get; set; }
 
+        public Manager(string name, int age, string employeeID, DateTime startDate, decimal salary, string department) : base(name, age, employeeID, startDate, salary)
+        {
+            Department = department;
         }
 
 
         public void HoldMeeting()
         {
+            Console.WriteLine($"{Name} håller ett personalmöte på hotellet.");
+        }
 
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Namn: {Name}, Ålder: {Age}, Anställnings-ID: {EmployeeId}, Startdatum: {StartDate.ToShortDateString()}, Lön: {Salary:C}, Avdelning: {Department}");
+        }
+        public override void Introduce()
+        {
+            Console.WriteLine($"Hej, jag heter {Name}, jag är {Age} år gammal och jag är chef för {Department} avdelningen.");
         }
     }
 }
