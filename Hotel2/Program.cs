@@ -38,26 +38,6 @@ namespace Hotel2
 
                 Console.WriteLine(); // Lägg till en tom rad för läsbarhet
             }
-
-
-
-            //Console.WriteLine("Manager");
-            //manager.PrintInfo();
-            //manager.Introduce();
-            //manager.HoldMeeting();
-
-            //Console.WriteLine("\nEmployee");
-            //employee.PrintInfo();
-            //employee.Introduce();
-            //employee.Work();
-
-
-            //Console.WriteLine("\nConsultant:");
-            //consultant.PrintInfo();
-            //consultant.Introduce();
-            //consultant.GiveAdvice();
-            //Console.WriteLine($"Hourly Rate: {consultant.HourlyRate}");
-            //Console.WriteLine($"Consulting Firm: {consultant.ConsultingFirm}");
         }
     }
 }
