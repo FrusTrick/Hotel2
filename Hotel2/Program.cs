@@ -21,7 +21,7 @@ namespace Hotel2
             employee.Work();
 
 
-            Consultant consultant = new Consultant("Eva Expert", 35, "C001", startDate3, 0, 1000, "Hotell Experterna AB", "HR");
+            Consultant consultant = new Consultant("Eva Expert", 35, "C001", new DateTime(2023, 1, 1), 0, 1000, "Hotell Experterna AB", "HR");
             Console.WriteLine("\nConsultant:");
             consultant.PrintInfo();
             consultant.Introduce();
