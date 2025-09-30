@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel2.Manpower
 {
-    public class Housekeeper : Employee
+    internal class Housekeeper : Employee
     {
         public Housekeeper(string name, int age, string employeeID, DateTime startDate, decimal salary, string department, string jobTitle) : base(name, age, employeeID, startDate, salary, department, jobTitle)
         {

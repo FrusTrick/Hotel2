@@ -15,6 +15,7 @@ namespace Hotel2
             Consultant consultant = new Consultant("Eva Expert", 35, "C001", new DateTime(2023, 1, 1), 0, 1000, "Hotell Experterna AB", "HR");
             hotelStaff.Add(consultant);
 
+            
 
             Console.WriteLine("Hotellets personal:");
             foreach (var person in hotelStaff)
@@ -36,6 +37,12 @@ namespace Hotel2
                 }
 
                 Console.WriteLine(); // Lägg till en tom rad för läsbarhet
+
+                double averageAge = hotelStaff.Average(p => p.Age);
+                decimal totalSalary = hotelStaff.Sum(p => p.Salary);
+
+                Console.WriteLine($"Genomsnittlig ålder på personalen: {averageAge:F1} år");
+                Console.WriteLine($"Total månadslön för anställda: {totalSalary:C}");
             }
         }
     }

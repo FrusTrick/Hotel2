@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Hotel2.Manpower
 {
-    public class Person
+    internal class Person
     {
-        protected string Name { get; set; }
-        protected int Age { get; set; }
-        protected string EmployeeId { get; set; }
-        protected DateTime StartDate { get; set; }
-        protected decimal Salary { get; set; }
-        protected string Department { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string EmployeeId { get; set; }
+        public DateTime StartDate { get; set; }
+        public decimal Salary { get; set; }
+        public string Department { get; set; }
 
-        protected Person (string toName, int toAge, string toEmployeeID, DateTime toStartDate, decimal toSalary, string toDepartment)
+        public Person (string toName, int toAge, string toEmployeeID, DateTime toStartDate, decimal toSalary, string toDepartment)
         {
             Name = toName;
             Age = toAge;
