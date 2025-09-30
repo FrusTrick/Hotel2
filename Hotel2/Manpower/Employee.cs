@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hotel2.Manpower.Consultant
+namespace Hotel2.Manpower
 {
-    internal class Consultant
+    internal class Employee : Person
     {
+
     }
 }
